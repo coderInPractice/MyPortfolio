@@ -57,17 +57,28 @@ class FolderListScreen {
         val paddingModifier  = Modifier
             .padding(start = 20.dp, end = 20.dp, top = 5.dp, bottom = 5.dp)
             .fillMaxWidth()
-        Card(elevation = CardDefaults.cardElevation(),
-            modifier = paddingModifier) {
+        ListItem(paddingModifier)
+    }
+
+    @Composable
+    fun ListItem(modifier: Modifier? = Modifier) {
+        Card(
+            elevation = CardDefaults.cardElevation(),
+            modifier = modifier!!,
+        ) {
             Column {
                 Row {
-                    Text(text = "personal notes",
-                        modifier = Modifier.padding(10.dp)
+                    Text(
+                        text = "personal notes",
+                        modifier = Modifier
+                            .padding(10.dp)
                             .alpha(0.5f)
                             .weight(0.85f),
-                        fontSize = 12.sp)
+                        fontSize = 12.sp
+                    )
 
-                    Image(painter = painterResource(id = R.drawable.keyboard_arrow_right_24),
+                    Image(
+                        painter = painterResource(id = R.drawable.keyboard_arrow_right_24),
                         modifier = Modifier
                             .padding(10.dp)
                             .weight(0.15f),
@@ -75,9 +86,11 @@ class FolderListScreen {
                     )
                 }
                 Spacer(modifier = Modifier.height(60.dp))
-                Text(text = "25",
+                Text(
+                    text = "25",
                     modifier = Modifier.padding(10.dp),
-                    fontSize = 36.sp)
+                    fontSize = 36.sp
+                )
             }
 
         }

@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.manish.app.dailydiary.ui.screens.FolderListScreen
+import com.manish.app.dailydiary.ui.screens.NotesDetailScreen
 import com.manish.app.dailydiary.ui.theme.DailyDiaryTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,8 +30,8 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize(),
                     floatingActionButton = {FabButton()},
                     floatingActionButtonPosition = FabPosition.End) { innerPadding ->
-                    FolderListScreen().TopBar(modifier = Modifier.padding(innerPadding))
-                    FolderListScreen().ShowDiaryFolderList()
+                    NotesDetailScreen().NotesDetailTopBar(modifier = Modifier.padding(innerPadding))
+//                    FolderListScreen().ShowDiaryFolderList()
                 }
             }
         }

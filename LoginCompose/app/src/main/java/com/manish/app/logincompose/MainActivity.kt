@@ -16,8 +16,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import com.manish.app.logincompose.navigation.Navigator
 import com.manish.app.logincompose.ui.commonui.SnackbarDelegate
-import com.manish.app.logincompose.ui.screens.LoginScreenInflate
-import com.manish.app.logincompose.ui.screens.SignUpScreenInflate
 import com.manish.app.logincompose.ui.theme.LoginComposeTheme
 
 class MainActivity : ComponentActivity() {

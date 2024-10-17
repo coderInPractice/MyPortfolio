@@ -1,10 +1,7 @@
 package com.manish.app.logincompose.businesslogic.repository
 
-import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.delay
 import kotlin.coroutines.resume
-import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
 class AuthenticationRepo {
